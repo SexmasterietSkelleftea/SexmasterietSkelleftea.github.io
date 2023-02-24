@@ -1,0 +1,113 @@
+html{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+body{
+    background-image: linear-gradient(to right top, rgb(15, 15, 15), rgb(60, 60, 60));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+}
+.bglogo{
+    height: 95%;
+    top: 10px;
+    position: fixed;
+    z-index: -1;
+}
+.main{
+    display: block;
+    max-width: 500px;
+    width: 80%;
+    margin-bottom: 50px;
+}
+.startdiv{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    height: 200px;
+}
+.section{
+    display: flex;
+    justify-content: space-between;
+}
+.imgdrink{
+    margin-top: 10px;
+    display: flex;
+    height: 150px;
+    border: solid 2px white;
+}
+.imgphat{
+    margin-top: 10px;
+    display: flex;
+    height: 150px;
+}
+.right{
+    text-align: right;
+}
+h1{
+    
+    text-align: center;
+    border-bottom: solid 2px white;
+}
+h2{
+    padding-top: 10px;
+    border-bottom: solid 2px white;
+}
+h3{
+    padding-top: 10px;
+    width: fit-content;
+    border-bottom: solid 2px white;
+}
+.label2{
+    cursor: pointer;
+    font-size: 7px;
+}
+ul{
+    margin-left: 20px;
+}
+span{
+    color: #DD3333;
+}
+.nounderline{
+    border-bottom: 0px;
+}
+#toggle, #toggle2, #toggle3, #toggle4, #toggle5, #toggle6, #toggle7, #toggle8, #toggle9, #toggle10, #toggle11{
+    display: none;
+}
+#toggle + .menu, #toggle2 + .drinks, #toggle3 + .phat, #toggle4 + .beer, #toggle5 + .cider,#toggle6 + .mixeddrink, #toggle7 + .shot, #toggle8 + .wine, #toggle9 + .alcoholfree, #toggle10 + .about, #toggle11 + .contact{
+    display: none;
+}
+#toggle:checked + .menu, #toggle2:checked + .drinks, #toggle3:checked + .phat, #toggle4:checked + .beer, #toggle5:checked + .cider, #toggle6:checked + .mixeddrink, #toggle7:checked + .shot, #toggle8:checked + .wine, #toggle9:checked + .alcoholfree, #toggle10:checked + .about, #toggle11:checked + .contact{
+    display: block;
+}
+footer{
+    background-color: rgb(0, 0, 0);
+    height: 25px;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+}
+@media only screen and (max-width: 768px){
+    .bglogo{
+        height: 70%;
+        top: 150px;
+    }  
+}
