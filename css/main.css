@@ -75,6 +75,10 @@ h3{
     width: fit-content;
     border-bottom: solid 2px white;
 }
+.allergies{
+    font-size: 18px;
+    text-align: center;
+}
 .label2{
     cursor: pointer;
     font-size: 7px;
