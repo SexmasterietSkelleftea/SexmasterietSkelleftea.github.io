@@ -76,7 +76,7 @@ h2{
 h3{
     padding-top: 10px;
     width: fit-content;
-    border-bottom: solid 2px white;
+    border-bottom: solid 2px #DD3333;
 }
 .allergies{
     font-size: 18px;
@@ -95,13 +95,13 @@ span{
 .nounderline{
     border-bottom: 0px;
 }
-#toggle, #toggle2, #toggle3, #toggle4, #toggle5, #toggle6, #toggle7, #toggle8, #toggle9, #toggle10, #toggle11, #toggle12{
+#toggle, #toggle2, #toggle3, #toggle4, #toggle5, #toggle6, #toggle7, #toggle8, #toggle9, #toggle10, #toggle11, #toggle12, #toggle13{
     display: none;
 }
-#toggle + .menu, #toggle2 + .drinks, #toggle3 + .phat, #toggle4 + .beer, #toggle5 + .cider,#toggle6 + .mixeddrink, #toggle7 + .shot, #toggle8 + .wine, #toggle9 + .alcoholfree, #toggle10 + .about, #toggle11 + .contact, #toggle12 + .event{
+#toggle + .menu, #toggle2 + .drinks, #toggle3 + .phat, #toggle4 + .beer, #toggle5 + .cider,#toggle6 + .mixeddrink, #toggle7 + .shot, #toggle8 + .wine, #toggle9 + .alcoholfree, #toggle10 + .about, #toggle11 + .contact, #toggle12 + .event, #toggle13 + .legendaryphin{
     display: none;
 }
-#toggle:checked + .menu, #toggle2:checked + .drinks, #toggle3:checked + .phat, #toggle4:checked + .beer, #toggle5:checked + .cider, #toggle6:checked + .mixeddrink, #toggle7:checked + .shot, #toggle8:checked + .wine, #toggle9:checked + .alcoholfree, #toggle10:checked + .about, #toggle11:checked + .contact, #toggle12:checked + .event{
+#toggle:checked + .menu, #toggle2:checked + .drinks, #toggle3:checked + .phat, #toggle4:checked + .beer, #toggle5:checked + .cider, #toggle6:checked + .mixeddrink, #toggle7:checked + .shot, #toggle8:checked + .wine, #toggle9:checked + .alcoholfree, #toggle10:checked + .about, #toggle11:checked + .contact, #toggle12:checked + .event, #toggle13:checked + .legendaryphin{
     display: block;
 }
 footer{
