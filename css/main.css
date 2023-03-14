@@ -2,7 +2,6 @@ html{
     margin: 0;
     display: flex;
     justify-content: center;
-    
 }
 *{
     margin: 0;
@@ -82,9 +81,8 @@ h3{
     font-size: 18px;
     text-align: center;
 }
-.label2{
+.label{
     cursor: pointer;
-    font-size: 7px;
 }
 ul{
     margin-left: 20px;
