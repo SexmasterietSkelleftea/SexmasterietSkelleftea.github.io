@@ -77,6 +77,11 @@ h3{
     width: fit-content;
     border-bottom: solid 2px #DD3333;
 }
+h4{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 20px;
+}
 .allergies{
     font-size: 18px;
     text-align: center;
@@ -101,6 +106,14 @@ span{
 }
 #toggle:checked + .menu, #toggle2:checked + .drinks, #toggle3:checked + .phat, #toggle4:checked + .beer, #toggle5:checked + .cider, #toggle6:checked + .mixeddrink, #toggle7:checked + .shot, #toggle8:checked + .wine, #toggle9:checked + .alcoholfree, #toggle10:checked + .about, #toggle11:checked + .contact, #toggle12:checked + .event, #toggle13:checked + .legendaryphin{
     display: block;
+}
+.partners{
+    display: flex;
+    justify-content: center;
+}
+.partnerlogo{
+    padding-top: 10px;
+    width: 200px;
 }
 footer{
     background-color: rgb(0, 0, 0);
