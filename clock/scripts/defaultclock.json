@@ -1,15 +1,15 @@
 
     {
-        "zero" : "clock/clockimages/zero.png",
-        "one" : "clock/clockimages/one.png",
-        "two" : "clock/clockimages/two.png",
-        "three" : "clock/clockimages/three.png",
-        "four" : "clock/clockimages/four.png",
-        "five" : "clock/clockimages/five.png",
-        "six" : "clock/clockimages/six.png",
-        "seven" : "clock/clockimages/seven.png",
-        "eight" : "clock/clockimages/eight.png",
-        "nine" : "clock/clockimages/nine.png",
-        "colon" : "clock/clockimages/colon.png",
-        "background" : "background-image: url(clock/clockimages/background.jpg);"
+        "zero" : "clock/clockimages/default/zero.png",
+        "one" : "clock/clockimages/default/one.png",
+        "two" : "clock/clockimages/default/two.png",
+        "three" : "clock/clockimages/default/three.png",
+        "four" : "clock/clockimages/default/four.png",
+        "five" : "clock/clockimages/default/five.png",
+        "six" : "clock/clockimages/default/six.png",
+        "seven" : "clock/clockimages/default/seven.png",
+        "eight" : "clock/clockimages/default/eight.png",
+        "nine" : "clock/clockimages/default/nine.png",
+        "colon" : "clock/clockimages/default/colon.png",
+        "background" : "background-image: url(clock/clockimages/default/background.jpg);"
     }

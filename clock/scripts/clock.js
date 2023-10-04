@@ -1,6 +1,32 @@
+document.onkeydown = switchclock;
+setInterval(Time, 1000);
+let jsonfiles = [
+    "clock/scripts/defaultclock.json",
+    "clock/scripts/testclock.json"];
+let index = 0;
+
+function switchclock(key){
+    key = key
+    if(key.keyCode == 39){
+        if(index == jsonfiles.length - 1)
+        index = 0;
+        else{
+            index++;
+        }
+    }
+    
+    if(key.keyCode == 37){
+        if(index == 0){
+            index = jsonfiles.length - 1;
+        }
+        else{
+            index--;
+        }
+    }
+}
 function Time(){
     const currenttime = new Date();
-    fetch("clock/scripts/defaultclock.json")
+    fetch(jsonfiles[index])
     .then(res => res.json())
     .then(data => {
     document.getElementById("colon").src = data.colon;
@@ -19,8 +45,6 @@ function Time(){
     else{
         minute = currenttime.getMinutes().toString().split("");
     }
-    console.log(hour);
-    console.log(minute);
     let digits = [
         data.zero, 
         data.one, 
@@ -53,7 +77,6 @@ function Time(){
         }
     }
     });
-    setInterval(Time, 1000);
 }
 
 
