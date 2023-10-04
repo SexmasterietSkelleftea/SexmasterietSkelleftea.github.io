@@ -1,10 +1,3 @@
-let digit1 = document.getElementById("digit1");
-let digit2 = document.getElementById("digit2");
-let colon = document.getElementById("colon");
-let digit3 = document.getElementById("digit3");
-let digit4 = document.getElementById("digit4");
-
-
 function Time(){
     const currenttime = new Date();
     fetch("clock/scripts/defaultclock.json")
@@ -60,8 +53,9 @@ function Time(){
         }
     }
     });
+    setInterval(Time, 1000);
 }
-setInterval(Time, 1000);
+
 
 
 
