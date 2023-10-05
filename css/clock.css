@@ -23,6 +23,7 @@ body{
     height: 400px;
     display: flex;
     transform: translateY(+90%);
+    justify-content: center;
 }
 .digit{
     width: 200px;
@@ -31,4 +32,23 @@ body{
 .divide{
     width: 100px;
     height: 400px;
+}
+.divide2{
+    transform: translateY(-20%);
+    position: absolute;
+    display: flex;
+    width: 600px;
+    height: 400px;
+}
+.analogclock{
+    position: absolute;
+    width: 600px;
+}
+.hourpointer{
+    position: absolute;
+    width: 600px;
+}
+.minutepointer{
+    position: absolute;
+    width: 600px;
 }

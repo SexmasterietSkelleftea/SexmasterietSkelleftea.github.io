@@ -1,10 +1,17 @@
 document.onkeydown = switchclock;
-setInterval(Time, 1000);
+setInterval(Time, 100);
 let jsonfiles = [
     "clock/scripts/defaultclock.json",
-    "clock/scripts/testclock.json"];
+    "clock/scripts/analogclock.json"];
 let index = 0;
-
+let prevhour;
+let prevminute;
+let prevsecond;
+let totalminute;
+let totalsecond;
+let hour = "";
+let minute = "";
+let second = "";
 function switchclock(key){
     key = key
     if(key.keyCode == 39){
@@ -29,53 +36,95 @@ function Time(){
     fetch(jsonfiles[index])
     .then(res => res.json())
     .then(data => {
-    document.getElementById("colon").src = data.colon;
     document.getElementById("background").style = data.background;
-    let hour = "";
-    let minute = "";
-    if(currenttime.getHours() < 10){
-        hour =  "0".concat(currenttime.getHours()).split("");
-    }
-    else{
-        hour = currenttime.getHours().toString().split("");
-    }
-    if(currenttime.getMinutes() < 10){
-        minute =  "0".concat(currenttime.getMinutes()).split("");
-    }
-    else{
-        minute = currenttime.getMinutes().toString().split("");
-    }
-    let digits = [
-        data.zero, 
-        data.one, 
-        data.two, 
-        data.three, 
-        data.four, 
-        data.five, 
-        data.six, 
-        data.seven, 
-        data.eight, 
-        data.nine];
-    for(i = 0; i < 3; i++){
-        if(hour[0] == i){
-            document.getElementById("digit1").src = digits[i];  
+    if(data.type == "analog"){
+        hour = currenttime.getHours();
+        minute = currenttime.getMinutes();
+        second = currenttime.getSeconds();
+        document.getElementById("digit1").src = "";
+        document.getElementById("digit2").src = "";
+        document.getElementById("colon").src = "";
+        document.getElementById("digit3").src = "";
+        document.getElementById("digit4").src = "";
+        document.getElementById("analogclock").src = data.analogclock;
+        document.getElementById("hourpointer").src= data.hourpointer;
+        document.getElementById("minutepointer").src = data.minutepointer;
+        if(prevhour == null){
+            document.getElementById("hourpointer").style = "transform: rotate("+(hour*30)+(minute*0.5)+"deg);";
+            prevhour = hour;
+            totalminute = minute + (hour*60)
+            totalsecond = second + (totalminute*60)
         }
-    }
-    for(i = 0; i < 10; i++){
-        if(hour[1] == i){
-            document.getElementById("digit2").src = digits[i];  
+        if(prevminute == null){
+            document.getElementById("minutepointer").style = "transform: rotate("+(minute*6)+(second*0.1)+"deg);";
+            prevminute = minute;
         }
-    }
-    for(i = 0; i < 7; i++){
-        if(minute[0] == i){
-            document.getElementById("digit3").src = digits[i];  
+        if(prevsecond == null){
+            prevsecond = second;
         }
-    }
-    for(i = 0; i < 10; i++){
-        if(minute[1] == i){
-            document.getElementById("digit4").src = digits[i];  
+        if(prevsecond != second){
+            document.getElementById("minutepointer").style = "transform: rotate("+(totalsecond*0.1)+"deg);";
+            document.getElementById("hourpointer").style = "transform: rotate("+(totalminute*0.5)+"deg);";
+            prevsecond = second;
+            totalsecond++;
+            
         }
-    }
+        if(prevminute != minute){
+            prevminute = minute;
+            totalminute++;
+        }
+        console.log(totalminute);
+        console.log(totalsecond);
+    } 
+    if(data.type == "digital"){
+        document.getElementById("analogclock").src = "";
+        document.getElementById("hourpointer").src = "";
+        document.getElementById("minutepointer").src = "";
+        if(currenttime.getHours() < 10){
+            hour =  "0".concat(currenttime.getHours()).split("");
+        }
+        else{
+            hour = currenttime.getHours().toString().split("");
+        }
+        if(currenttime.getMinutes() < 10){
+            minute =  "0".concat(currenttime.getMinutes()).split("");
+        }
+        else{
+            minute = currenttime.getMinutes().toString().split("");
+        }
+        document.getElementById("colon").src = data.colon;
+        let digits = [
+            data.zero, 
+            data.one, 
+            data.two, 
+            data.three, 
+            data.four, 
+            data.five, 
+            data.six, 
+            data.seven, 
+            data.eight, 
+            data.nine];
+        for(i = 0; i < 3; i++){
+            if(hour[0] == i){
+                document.getElementById("digit1").src = digits[i];  
+            }
+        }
+        for(i = 0; i < 10; i++){
+            if(hour[1] == i){
+                document.getElementById("digit2").src = digits[i];  
+            }
+        }
+        for(i = 0; i < 7; i++){
+            if(minute[0] == i){
+                document.getElementById("digit3").src = digits[i];  
+            }
+        }
+        for(i = 0; i < 10; i++){
+            if(minute[1] == i){
+                document.getElementById("digit4").src = digits[i];  
+            }
+        }
+        }
     });
 }
 

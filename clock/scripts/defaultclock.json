@@ -1,5 +1,6 @@
 
     {
+        "type" : "digital",
         "zero" : "clock/clockimages/default/zero.png",
         "one" : "clock/clockimages/default/one.png",
         "two" : "clock/clockimages/default/two.png",
