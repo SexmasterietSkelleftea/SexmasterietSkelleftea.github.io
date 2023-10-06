@@ -1,0 +1,15 @@
+{
+    "type" : "digital",
+    "zero" : "clock/clockimages/cyberpunkdigital/zero.png",
+    "one" : "clock/clockimages/cyberpunkdigital/one.png",
+    "two" : "clock/clockimages/cyberpunkdigital/two.png",
+    "three" : "clock/clockimages/cyberpunkdigital/three.png",
+    "four" : "clock/clockimages/cyberpunkdigital/four.png",
+    "five" : "clock/clockimages/cyberpunkdigital/five.png",
+    "six" : "clock/clockimages/cyberpunkdigital/six.png",
+    "seven" : "clock/clockimages/cyberpunkdigital/seven.png",
+    "eight" : "clock/clockimages/cyberpunkdigital/eight.png",
+    "nine" : "clock/clockimages/cyberpunkdigital/nine.png",
+    "colon" : "clock/clockimages/cyberpunkdigital/colon.png",
+    "background" : "background-image: url(clock/clockimages/cyberpunkdigital/background.gif);"
+}

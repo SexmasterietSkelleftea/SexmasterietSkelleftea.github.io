@@ -2,7 +2,9 @@ document.onkeydown = switchclock;
 setInterval(Time, 100);
 let jsonfiles = [
     "clock/scripts/defaultclock.json",
-    "clock/scripts/analogclock.json"];
+    "clock/scripts/analogclock.json",
+    "clock/scripts/cyberpunkdigital.json",
+    "clock/scripts/cyberpunkanalog.json"];
 let index = 0;
 let prevhour;
 let prevminute;
