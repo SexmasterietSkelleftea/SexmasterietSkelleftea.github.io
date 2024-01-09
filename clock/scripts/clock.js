@@ -4,7 +4,8 @@ let jsonfiles = [
     "clock/scripts/defaultclock.json",
     "clock/scripts/analogclock.json",
     "clock/scripts/cyberpunkdigital.json",
-    "clock/scripts/cyberpunkanalog.json"];
+    "clock/scripts/cyberpunkanalog.json",
+    "clock/scripts/neonanalog.json"];
 let index = 0;
 let prevhour;
 let prevminute;

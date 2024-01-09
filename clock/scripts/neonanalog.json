@@ -1,0 +1,7 @@
+{
+    "type" : "analog",
+    "analogclock" : "clock/clockimages/neonanalog/analogclock.png",
+    "hourpointer" : "clock/clockimages/neonanalog/hourpointer.png",
+    "minutepointer" : "clock/clockimages/neonanalog/minutepointer.png",
+    "background" : "background-image: url(clock/clockimages/neonanalog/background.gif);"
+}
