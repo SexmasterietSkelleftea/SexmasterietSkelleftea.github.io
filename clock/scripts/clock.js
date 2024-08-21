@@ -6,7 +6,9 @@ let jsonfiles = [
     "clock/scripts/cyberpunkdigital.json",
     "clock/scripts/cyberpunkanalog.json",
     "clock/scripts/neonanalog.json",
-    "clock/scripts/disneydigital.json"];
+    "clock/scripts/disneydigital.json",
+    "clock/scripts/disneydigital2.json",
+    "clock/scripts/disneydigital3.json"];
 let index = 0;
 let prevhour;
 let prevminute;
