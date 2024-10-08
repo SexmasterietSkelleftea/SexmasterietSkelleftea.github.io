@@ -8,6 +8,7 @@ html{
     padding: 0;
     font-family: 'Oswald', sans-serif;
     color: white;
+    cursor: none;
 }
 body{
     background-size: cover;
