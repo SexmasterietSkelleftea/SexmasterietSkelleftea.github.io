@@ -1,0 +1,15 @@
+{
+    "type" : "digital",
+    "zero" : "clock/clockimages/disneydigital/zero.png",
+    "one" : "clock/clockimages/disneydigital/one.png",
+    "two" : "clock/clockimages/disneydigital/two.png",
+    "three" : "clock/clockimages/disneydigital/three.png",
+    "four" : "clock/clockimages/disneydigital/four.png",
+    "five" : "clock/clockimages/disneydigital/five.png",
+    "six" : "clock/clockimages/disneydigital/six.png",
+    "seven" : "clock/clockimages/disneydigital/seven.png",
+    "eight" : "clock/clockimages/disneydigital/eight.png",
+    "nine" : "clock/clockimages/disneydigital/nine.png",
+    "colon" : "clock/clockimages/disneydigital/colon.png",
+    "background" : "background-image: url(clock/clockimages/fireplace/fire3.gif);"
+}
