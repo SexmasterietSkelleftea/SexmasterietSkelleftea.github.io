@@ -15,9 +15,9 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    width: 100%;
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 .clockdiv{
     width: 900px;
@@ -25,6 +25,16 @@ body{
     display: flex;
     transform: translateY(+90%);
     justify-content: center;
+}
+.posterclockdiv{
+    width: 900px;
+    height: 400px;
+    display: flex;
+    position: fixed;
+    right: 0;
+    justify-content: center;
+    transform: translateY(+90%);
+    margin-right: 6%;
 }
 .digit{
     width: 200px;
@@ -52,4 +62,26 @@ body{
 .minutepointer{
     position: absolute;
     width: 600px;
+}
+.posterdiv{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+.poster{
+    height: 100%;
+    position: fixed;
+}
+#poster{
+    height: 100%;
+}
+.posterbackground{
+    position: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    transform: translateX(22%);
 }
