@@ -287,7 +287,7 @@ function RotatePosters(){
     .then(data => {
         if(feature == 1){
            document.getElementById("poster").src = data.posters[posterrotation];
-           if(posterrotation < posters.length){
+           if(posterrotation < posters.length+1){
                 posterrotation++;
            }
            else{
@@ -299,7 +299,3 @@ function RotatePosters(){
         }
     });
 }
-
-
-
-
