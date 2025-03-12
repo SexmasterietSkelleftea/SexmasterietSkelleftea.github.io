@@ -1,6 +1,7 @@
 document.onkeydown = switchclock;
 setInterval(Time, 100);
 setInterval(RotatePosters, 10000);
+setInterval(RefreshPage, 21600000);
 let jsonfiles = [
     "clock/scripts/defaultclock.json",
     "clock/scripts/analogclock.json",
@@ -26,6 +27,7 @@ let totalsecond;
 let hour = "";
 let minute = "";
 let second = "";
+GetCookie();
 function switchclock(key){
     if(key.key == "ArrowRight"){
         if(index == jsonfiles.length - 1)
@@ -57,7 +59,11 @@ function switchclock(key){
             feature--;
         }
     }
-    console.log(feature)
+    if(key.key == "r"){
+        location.reload(true);
+    }
+    document.cookie = "index=" + index;
+    document.cookie = "feature=" + feature;
 }
 function Time(){
     const currenttime = new Date();
@@ -298,4 +304,18 @@ function RotatePosters(){
             document.getElementById("poster").src = ""; 
         }
     });
+}
+function RefreshPage(){
+    document.cookie = "index=" + index;
+    document.cookie = "feature=" + feature;
+    location.reload(true) 
+}
+function GetCookie(){
+    let decodedCookie = decodeURIComponent(document.cookie).split(';');
+    feature = decodedCookie[0].replace(/^\D+/g, '')
+    index = decodedCookie[1].replace(/^\D+/g, '')
+    console.log(decodedCookie)
+    console.log(document.cookie)
+    console.log(index)
+    console.log(feature)
 }
