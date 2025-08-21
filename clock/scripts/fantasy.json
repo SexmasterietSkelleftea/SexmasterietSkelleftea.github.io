@@ -1,0 +1,15 @@
+{
+    "type" : "digital",
+    "zero" : "clock/clockimages/fantasy/zero.png",
+    "one" : "clock/clockimages/fantasy/one.png",
+    "two" : "clock/clockimages/fantasy/two.png",
+    "three" : "clock/clockimages/fantasy/three.png",
+    "four" : "clock/clockimages/fantasy/four.png",
+    "five" : "clock/clockimages/fantasy/five.png",
+    "six" : "clock/clockimages/fantasy/six.png",
+    "seven" : "clock/clockimages/fantasy/seven.png",
+    "eight" : "clock/clockimages/fantasy/eight.png",
+    "nine" : "clock/clockimages/fantasy/nine.png",
+    "colon" : "clock/clockimages/fantasy/colon.png",
+    "background" : "background-image: url(clock/clockimages/fantasy/BackgroundDay.gif);"
+}

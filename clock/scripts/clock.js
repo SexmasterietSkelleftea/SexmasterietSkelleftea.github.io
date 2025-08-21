@@ -12,7 +12,9 @@ let jsonfiles = [
     "clock/scripts/disneydigital2.json",
     "clock/scripts/fireplace.json",
     "clock/scripts/fireplace2.json",
-    "clock/scripts/fireplace3.json"];
+    "clock/scripts/fireplace3.json",
+    "clock/scripts/fantasy.json",
+    "clock/scripts/fantasy2.json"];
 let posters = [
     "clock/scripts/posters.json"
 ];
